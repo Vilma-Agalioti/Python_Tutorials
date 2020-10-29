@@ -1,0 +1,23 @@
+# Overview of how dictionarie work in python
+
+mydict = {'fruits': ['banana', 'apple', 'orange'],
+         'vegetables': ['pepper', 'carrot'], 
+         'cheese': ['swiss', 'cheddar', 'brie']}
+
+mydict.keys()
+mydict.values()
+
+# looping through elements of a dictionary
+for key, value in mydict.items():
+    print('Key is', key, '- value is', value)
+
+for key in mydict.keys():
+    print('Key', key, 'is linked to', mydict[key])
+
+# searching for item in dictionary keys:
+if 'fish' not in mydict.keys():
+    print('element not there')
+# using .get() to retrieve the item
+if mydict.get('fish') == None: 
+    print('element not there')
+
